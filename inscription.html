@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+    
+    <ul>
+        <li>
+            <a href="accueil.html">Mission Militaire</a>
+        </li>
+        <li>
+            <a href="inscription.html">Inscription / Reclamation</a>
+        </li>
+        <li>
+            <a href="equipements.html">equipement militaire</a>
+        </li>
+    
+    </ul>
+    <h1>Formulaire d'inscription ou reclamation</h1>
+    <table>
+        <tr>
+            <td><label for="name">Nom</label></td>
+            <td><input type="text" name="name" id="name" nom="taper votre nom" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="prenom">Prénom</label></td>
+            <td><input type="text" name="prenom" id="prenom" nom="taper votre prenom" required></td>
+        </tr>
+<tr>
+    <td>
+        <label for="grade">Grade:</label>
+    </td>
+    <td>
+        <select name="grade" id="grade">
+            <option>soldat</option>
+            <option>sergent</option>
+            <option>sergent chef</option>
+        </select>
+        </td>
+    </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@(example\.com|domaine\.com)$" placeholder="nom@exemple.com"></td>
+        </tr>
+    </table>
+       
+           <label>Message</label><br>
+           <textarea cols="40" rows="5"></textarea><br>
+        
+
+        <label>joindre du fichier</label>
+            <input type="file" id="imageUpload" name="imageUpload" accept="media/*" onchange="afficherApercuImage()">
+            <br>
+            <input type="submit" value="Envoyé">
+       
+        
+
+
+</body>
+</html>
